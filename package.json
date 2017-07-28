@@ -18,7 +18,12 @@
   ],
   "keywords": [
     "react-native",
-    "react-native component"
+    "react-native component",
+    "yeoman generator",
+    "react-native generator",
+    "scaffold",
+    "automate",
+    "prevention of tedious stuff"
   ],
   "dependencies": {
     "chalk": "^2.0.1",
