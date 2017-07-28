@@ -24,4 +24,4 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 > 👋🏽 Hello, currently looking to add more features, please submit PR's or issues if you have any additional enhancements!
 
 ## License
-MIT © [Brandon Him](https://github.com/brh55/generator-rnc
+MIT © [Brandon Him](https://github.com/brh55/generator-rnc)
