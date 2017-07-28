@@ -16,7 +16,7 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 `$ npm install --global yo generator-rnc`
 
 ## Usage
-1. Install (Yo)[http://yeoman.io/]
+1. Install [Yo](http://yeoman.io/)
 2. `$ yo rnc`
 3. Answer the prompts and go 🚀!
 
