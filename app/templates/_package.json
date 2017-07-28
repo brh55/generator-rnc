@@ -1,0 +1,50 @@
+{
+	"name": "<%= componentName %>",
+	"version": "0.1.0",
+	"description": "<%= description %>",
+	"repository": "https://github.com/<%= githubUsername %>/<%= componentName %>.git",
+	"homepage": "https://github.com/<%= githubUsername %>/<%= componentName %>#readme",
+	"license": "MIT",
+	"author": {
+		"name": "<%= name %>",
+		"email": "<%= email %>",
+		"url": "<%= website %>"
+	},
+	"directories": {
+		"example": "example"
+	},
+	"bugs": {
+		"url": "https://github.com/<%= githubUsername %>/<%= componentName %>/issues"
+	},
+	"scripts": {
+		"test": "jest"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"react-native",
+		"react-native component"
+	],
+	"peerDependencies": {
+		"react": "*",
+		"react-native": "*",
+		"prop-types": "*"
+	},
+	"devDependencies": {
+		"babel-jest": "^20.0.3",
+		"babel-preset-react-native": "^2.1.0",
+		"jest": "^20.0.4",
+		"jest-react-native": "^18.0.0",
+		"react": "^15.6.1",
+		"react-native": "^0.46.4",
+		"react-test-renderer": "^15.5.4"
+	},
+	"jest": {
+		"preset": "react-native",
+		"modulePathIgnorePatterns": [
+			"<rootDir>/example/",
+			"<rootDir>/__tests__/mocks/"
+		]
+	}
+}

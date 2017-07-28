@@ -1,0 +1,37 @@
+{
+  "name": "generator-rnc",
+  "version": "0.1.0",
+  "description": "Scaffold a react-native component with testing and a proper package.json intact",
+  "repository": "https://github.com/brh55/generator-rnc.git",
+  "homepage": "https://github.com/brh55/generator-rnc#readme",
+  "license": "MIT",
+  "author": {
+    "name": "Brandon Him",
+    "email": "brandonhim@live.com",
+    "url": "https://github.com/brh55"
+  },
+  "bugs": {
+    "url": "https://github.com/brh55/generator-rnc/issues"
+  },
+  "files": [
+    "app/",
+    "index.js"
+  ],
+  "keywords": [
+    "react-native",
+    "react-native component"
+  ],
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "humanize-url": "^1.0.1",
+    "normalize-url": "^1.9.1",
+    "underscore.string": "^3.3.4",
+    "yeoman-generator": "^1.1.1",
+    "yosay": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.7.0"
+  }
+}
