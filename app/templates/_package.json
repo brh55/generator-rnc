@@ -17,9 +17,12 @@
 		"url": "https://github.com/<%= githubUsername %>/<%= componentName %>/issues"
 	},
 	"scripts": {
-		"test": "jest"
+		"test": "jest",
+		"renew-snap": "jest --updateSnapshot",
+		"clean-test": "jest --no-cache"
 	},
 	"files": [
+		"components/"
 		"index.js"
 	],
 	"keywords": [
@@ -36,9 +39,9 @@
 		"babel-preset-react-native": "^2.1.0",
 		"jest": "^20.0.4",
 		"jest-react-native": "^18.0.0",
-		"react": "^15.6.1",
+		"react": "16.0.0-alpha.12",
 		"react-native": "^0.46.4",
-		"react-test-renderer": "^15.5.4"
+		"react-test-renderer": "^16.0.0-alpha.12"
 	},
 	"jest": {
 		"preset": "react-native",

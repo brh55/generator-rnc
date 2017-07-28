@@ -1,7 +1,7 @@
 {
   "name": "generator-rnc",
   "version": "0.1.0",
-  "description": "Scaffold a react-native component with testing and a proper package.json intact",
+  "description": "Scaffold a ready-to-go react-native component",
   "repository": "https://github.com/brh55/generator-rnc.git",
   "homepage": "https://github.com/brh55/generator-rnc#readme",
   "license": "MIT",
@@ -14,8 +14,7 @@
     "url": "https://github.com/brh55/generator-rnc/issues"
   },
   "files": [
-    "app/",
-    "index.js"
+    "app/"
   ],
   "keywords": [
     "react-native",

@@ -10,11 +10,8 @@ const tree = renderer.create(
 ).toJSON();
 
 test('Render properly', () => {
-	const container = tree.children[0];
-	expect(container).toBe('View');
-
-	const hello = container.children[0];
-	expect(hello).toBe('Text');
+	const hello = tree.children[0].children[0];
+	expect(hello).toBe('Hello world!');
 });
 
 test('Snapshot match', () => {

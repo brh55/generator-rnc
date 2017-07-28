@@ -32,7 +32,7 @@
 MIT © [<%= name %>](https://github.com/<%= githubUsername %>/<%= componentName %>)
 
 ---
-# Generator Post Steps
+# Generator Notes
 Hello and thanks for using, [`generator-rnc`](https://github.com/brh55/generator-rnc)! <br>
 Please feel free to report [bugs](https://github.com/brh55/generator-rnc/issues) or contribute to the generator to help others, or contribute to the generator to help others.
 

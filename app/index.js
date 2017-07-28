@@ -15,12 +15,12 @@ module.exports = class extends Generator {
 			name: 'componentNameRaw',
 			type: 'input',
 			message: 'What do you want to call your component?',
-			default: this.appname
+			default: 'MyAwesomeComponent'
 		}, {
 			name: 'description',
 			type: 'input',
 			message: 'What is your component description?',
-			default: `My new react-native component!`
+			default: `My awesome component does a lot of cool stuff!`
 		}, {
 			name: 'website',
 			message: 'What is the URL of your website?',
