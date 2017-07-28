@@ -1,9 +1,9 @@
 {
-	"name": "<%= componentName %>",
+	"name": "<%= packageName %>",
 	"version": "0.1.0",
 	"description": "<%= description %>",
-	"repository": "https://github.com/<%= githubUsername %>/<%= componentName %>.git",
-	"homepage": "https://github.com/<%= githubUsername %>/<%= componentName %>#readme",
+	"repository": "https://github.com/<%= githubUsername %>/<%= packageName %>.git",
+	"homepage": "https://github.com/<%= githubUsername %>/<%= packageName %>#readme",
 	"license": "MIT",
 	"author": {
 		"name": "<%= name %>",
@@ -14,7 +14,7 @@
 		"example": "example"
 	},
 	"bugs": {
-		"url": "https://github.com/<%= githubUsername %>/<%= componentName %>/issues"
+		"url": "https://github.com/<%= githubUsername %>/<%= packageName %>/issues"
 	},
 	"scripts": {
 		"test": "jest",

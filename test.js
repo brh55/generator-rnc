@@ -10,32 +10,36 @@ test.serial('Test standard scaffold', async t => {
 		.withPrompts({
 			componentNameRaw: 'helloWorld',
 			githubUsername: 'tester',
-			website: 'helloworld'
+			website: 'helloworld',
+			prefixReactNative: true
 		});
 
 	// Core Code Intact
 	t.notThrows(() => assert.file([
-		'package.json',
-		'.travis.yml',
 		'.babelrc',
 		'.gitignore',
-		'readme.md',
+		'.travis.yml',
+		'__tests__/Hello-World.test.js',
 		'components/Hello-World.js',
-		'__tests__/Hello-World.test.js'
+		'LICENSE',
+		'package.json',
+		'readme.md'
 	]));
 
 	// Tpl Assertions
 	t.notThrows(() => assert.fileContent([
-		['readme.md', /https:\/\/img.shields.io\/travis\/tester\/hello-world.svg/],
+		['__tests__/Hello-World.test.js', /helloWorld/],
 		['components/Hello-World.js', /helloWorld/],
-		['__tests__/Hello-World.test.js', /helloWorld/]
+		['package.json', /react-native-hello-world/],
+		['readme.md', /https:\/\/img.shields.io\/travis\/tester\/react-native-hello-world.svg/]
 	]));
 
 	// Check to see no strangling template tags
 	t.notThrows(() => assert.noFileContent([
-		['readme.md', /<%.*%>/],
-		['package.json', /<%.*%>/],
+		['__tests__/Hello-World.test.js', /<%.*%>/],
 		['components/Hello-World.js', /<%.*%>/],
-		['__tests__/Hello-World.test.js', /<%.*%>/]
+		['lICENSE', /<%.*%>/],
+		['package.json', /<%.*%>/],
+		['readme.md', /<%.*%>/]
 	]));
 });

@@ -14,8 +14,13 @@ module.exports = class extends Generator {
 		return this.prompt([{
 			name: 'componentNameRaw',
 			type: 'input',
-			message: 'What do you want to call your component?',
-			default: 'MyAwesomeComponent'
+			message: 'What do you want to call your component class referenced in code?',
+			default: 'AwesomeComponent'
+		},{
+			name: 'prefixReactNative',
+			type: 'boolean',
+			message: 'Do you want to prefix react-native to your package?',
+			default: 'react-native-awesome-component'
 		}, {
 			name: 'description',
 			type: 'input',
@@ -56,6 +61,7 @@ module.exports = class extends Generator {
 			const tpl = Object.assign({}, props);
 			tpl.componentNameUpper = toHypens(props.componentNameRaw);
 			tpl.componentName = tpl.componentNameUpper.toLowerCase();
+			tpl.packageName = props.prefixReactNative ? `react-native-${tpl.componentName}` : tpl.componentName;
 			tpl.website = humanizeUrl(props.website);
 			tpl.name = this.user.git.name();
 			tpl.email = this.user.git.email();
