@@ -7,7 +7,7 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 - ✅ Robust package.json with set peer dependencies, author, issue link, etc.
 - ✅ Pre-configured Jest for react-native
 - ✅ Flat-square `readme` badges for Travis, David DM, and NPM downloads
-- ✅ `.gitignore` with ignores for emac files and a whole bunch of none sense
+- ✅ `.gitignore` with ignores for emac files and a whole bunch of nonsense
 - ✅ MIT license and listed on readme
 
 ![image](https://user-images.githubusercontent.com/6020066/28726323-717b913a-7386-11e7-8e47-625a1e731211.png)
@@ -16,7 +16,7 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 `$ npm install --global yo generator-rnc`
 
 ## Usage
-1. Install (Yo)[http://yeoman.io/]
+1. Install [Yo](http://yeoman.io/)
 2. `$ yo rnc`
 3. Answer the prompts and go 🚀!
 
