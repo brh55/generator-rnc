@@ -13,11 +13,11 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 ![image](https://user-images.githubusercontent.com/6020066/28790560-37f7260c-75ef-11e7-8eb5-a55483f616cb.png)
 
 ## Install
-`$ npm install --global yo generator-rnc`
+`$ npm install --global generator-rnc`
 
 ## Usage
 1. Install [Yo](http://yeoman.io/)
-2. `$ yo rnc`
+2. Run generator, `$ yo rnc`
 3. Answer the prompts and go 🚀!
 
 ## Contributors
