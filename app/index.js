@@ -45,17 +45,13 @@ module.exports = class extends Generator {
 				const tplParam = tpl || {};
 				this.fs.copyTpl(from, to, tplParam);
 			};
+			
+			const copyOrphan = (from, to, tpl) => {
+				copy(this.templatePath(from), this.destinationPath(to), tplParam);
+			};
 
 			// Hypens and Uppercase each letter after Hypen from SO
 			const toHypens = (word) => word.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/(^([a-zA-Z\p{M}]))|([ -][a-zA-Z\p{M}])/g, firstL => firstL.toUpperCase());
-
-			const copyOrphan = (from, to, tpl) => {
-				// Not ideal to be using private method
-				// but this avoids issue with globby recogonizing destPath/file
-				// as file and file/**
-				const tplParam = tpl || {};
-				copy(this.templatePath(from), this.destinationPath(to), tplParam);
-			};
 
 			// Add the raw value and componentName to template value
 			const tpl = Object.assign({}, props);
