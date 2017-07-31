@@ -10,7 +10,7 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 - ✅ `.gitignore` with ignores for emac files and a whole bunch of nonsense
 - ✅ MIT license and listed on readme
 
-![image](https://user-images.githubusercontent.com/6020066/28726323-717b913a-7386-11e7-8e47-625a1e731211.png)
+![image](https://user-images.githubusercontent.com/6020066/28790560-37f7260c-75ef-11e7-8eb5-a55483f616cb.png)
 
 ## Install
 `$ npm install --global yo generator-rnc`
