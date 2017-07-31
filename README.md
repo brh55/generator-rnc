@@ -5,7 +5,7 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 
 **Nutshell Features:**
 - ✅ Robust package.json with set peer dependencies, author, issue link, etc.
-- ✅ Ready to go Jest configured for react-native
+- ✅ Pre-configured Jest for react-native
 - ✅ Flat-square `readme` badges for Travis, David DM, and NPM downloads
 - ✅ `.gitignore` with ignores for emac files and a whole bunch of none sense
 - ✅ MIT license and listed on readme

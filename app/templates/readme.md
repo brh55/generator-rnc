@@ -2,16 +2,17 @@
 
 > <%= description %>
 
-## Basic Usage
-1. Install the repository
-    ```bash
-    $ npm install <%= packageName %> --save
-    ```
-2. Add an import to the top of yur file
+## Install
+```bash
+$ npm install <%= packageName %> --save
+```
+
+## Usage
+1. Add an import to the top of yur file
     ```js
     import <%= componentNameRaw %> from '<%= packageName %>';
     ```
-3. Declare the component in the render method of your component
+2. Declare the component in the render method of your component
     ```jsx
     render() {
         return (
@@ -21,7 +22,7 @@
         )
     }
     ```
-4. Take a look at the [example app](/tree/master/example).
+3. Take a look at the [example app](/tree/master/example).
 
 ## Component Props
 | Property | Type     | Description             | Example     |
@@ -33,11 +34,11 @@ MIT © [<%= name %>](https://github.com/<%= githubUsername %>/<%= packageName %>
 
 ---
 # Generator Notes
-Hello and thanks for using, [`generator-rnc`](https://github.com/brh55/generator-rnc)! <br>
-Please feel free to report [bugs](https://github.com/brh55/generator-rnc/issues) or contribute to the generator to help others, or contribute to the generator to help others.
+👋🏽 Hello and thanks for using, [`generator-rnc`](https://github.com/brh55/generator-rnc)! <br>
+Please feel free to report [bugs](https://github.com/brh55/generator-rnc/issues) or contribute useful features to the generator to help others.
 
-Also, don't forget it's always good to include example application for users to test out and use your component.
+Also, don't forget to include example an application for users to test out and use your component.
 
 1. `react-native init example`
 
-> P.S: Don't forget to delete this note :)
+> 🗒 P.S: Don't forget to delete this note :)
