@@ -20,7 +20,7 @@ module.exports = class extends Generator {
 			name: 'prefixReactNative',
 			type: 'boolean',
 			message: 'Do you want to prefix react-native to your package?',
-			default: 'react-native-awesome-component'
+			default: true
 		}, {
 			name: 'description',
 			type: 'input',
