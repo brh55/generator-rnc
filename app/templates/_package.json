@@ -22,7 +22,7 @@
 		"clean-test": "jest --no-cache"
 	},
 	"files": [
-		"components/"
+		"components/",
 		"index.js"
 	],
 	"keywords": [

@@ -45,8 +45,9 @@ module.exports = class extends Generator {
 				const tplParam = tpl || {};
 				this.fs.copyTpl(from, to, tplParam);
 			};
-			
+
 			const copyOrphan = (from, to, tpl) => {
+				const tplParam = tpl || {};
 				copy(this.templatePath(from), this.destinationPath(to), tplParam);
 			};
 
