@@ -20,8 +20,32 @@ This yeoman generator is pretty much inspired from the works of [generator-nm](h
 2. Run generator, `$ yo rnc`
 3. Answer the prompts and go 🚀!
 
+## Tips & Troubleshooting
+### Importing/Publishing
+#### How to import locally without have to publish every change?
+1. `cd` into your generated component directory and run `npm link` to create a symlink
+2. `cd` into your application where you want to import component directory and run `npm link <package name of component>`
+
+Feel free to read over the [`link`](https://docs.npmjs.com/cli/link) for more information regarding `npm link`
+
+### Testing
+#### CI Build fails because of snapshot error?
+Most likely you have an old snapshot, run `npm run renew-snap` or `jest --updateSnapshot` to renew existing snapshot.
+
+Read the [Snapshot Testing Docs](https://facebook.github.io/jest/docs/en/snapshot-testing.html) for more information.
+
+#### Unit test keep failing even after changes
+This can be caused by cached files by jest, run `jest --no-cache` or `npm run clean-test` to run the test at a clean state.
+
+For more additional help, visit the [Jest Troubleshoot Page](https://facebook.github.io/jest/docs/en/troubleshooting.html#content)
+
+## Open-Source Components Built by `generator-rnc`
+- **[react-native-open-maps](https://github.com/brh55/react-native-open-maps)**: A simple lib to open up the corresponding map (Google or Apple Maps) from a set of coordinates (latitude & longitude) within react-native.
+
+> Did you built something recently? Feel free to add your component on here for others to reference and submit a PR.
+
 ## Contributors
-> 👋🏽 Hello, currently looking to add more features, please submit PR's or issues if you have any additional enhancements!
+> 👋🏽  Hello, currently looking to add more features, please submit PR's or issues if you have any additional enhancements!
 
 ## License
 MIT © [Brandon Him](https://github.com/brh55/generator-rnc)
