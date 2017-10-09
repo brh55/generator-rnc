@@ -10,6 +10,7 @@
 		"email": "<%= email %>",
 		"url": "<%= website %>"
 	},
+	"main": "components/<%= componentNameUpper %>.js",
 	"directories": {
 		"example": "example"
 	},
@@ -22,8 +23,7 @@
 		"clean-test": "jest --no-cache"
 	},
 	"files": [
-		"components/",
-		"index.js"
+		"components/"
 	],
 	"keywords": [
 		"react-native",
